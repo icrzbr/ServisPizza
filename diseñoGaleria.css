@@ -1,0 +1,84 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	font-size: 26px;
+	padding: 0;
+	margin: 0;
+	margin-left: var(--width-collapsed);
+}
+
+a{
+	color: #6a328f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 110%
+	text-decoration: none; 
+}
+
+img{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #6a328f;
+}
+
+li{
+	float: left;/*cambiamos el orden de las palabras, izquierda derecha*/
+	list-style: none;/*quitamos las viñetas de la lista*/
+	padding: 10px;/*espacio entre letras*/
+	margin-top: 5px;/* espacio del margen superior*/
+}
+
+nav{
+	float: right;
+	text-decoration: none;
+	margin-right: 150px;/*espacio del margen*/
+}
+
+li:hover a{
+	color: orange;/*al poner el cursor en las letras, tendran el color asignado*/
+}
+
+.slider ul{
+	display: flex;/*ponemoslas imagenes a la par, para cuando vaya rotando siga
+					la siguiente imagen*/
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+}
+
+.slider li{
+	list-style: none;
+	width: 100%
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{/*tiempo de detencion de las imagenes vitas en las pantalla*/
+	/*Timepo de la primera imagen*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}/*tirmpo de la imagen de 4 seg*/
+	/*demoracion de la primera imagen a la siguiente*/
+
+	/*Tiempo de la segunda imagen*/
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	/*Tiempo de la tercera imagen*/
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	/*Tiempo de la cuarta imagen*/
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+footer{
+	max-width: auto;
+	min-height: auto;
+	background-color: #FF5722;
+	margin: 0 auto;
+}

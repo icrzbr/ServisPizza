@@ -1,0 +1,46 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	font-size: 26px;
+	padding: 0;
+	margin: 0;
+	margin-left: var(--width-collapsed);
+}
+
+a {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 110%;
+	text-decoration: none; /*quita la linea por defecto etiqueta a*/
+}
+
+img{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #6a328f;
+}
+
+li{
+	float: left;/*cambia el orden de las palabras, de izquierda a derecha*/
+	list-style: none;/*quitamos las viñetas*/
+	padding: 10px;/*separacion entre letras*/
+	margin-top: 5px;
+}
+
+nav{
+	float: right;/*cambia el orden de las palabras, de izquierda a derecha*/
+	text-decoration: none;/*quitamos la decoracion del texto*/
+	margin-right: 150px;/*espacio entre el margen drecho*/
+}
+
+li:hover a{
+	color: orange;
+}
+
+footer{
+	max-width: auto;
+	min-height: auto;
+	background-color: #FF5722;
+	margin: auto;
+}		

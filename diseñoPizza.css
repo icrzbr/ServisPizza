@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	font-size: 26px;
+	padding: 0;
+	margin: 0;
+	margin-left: var(--width-collaspsed);
+}
+
+a{
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font.size: 110%
+	text-decoration: none;
+}
+
+img{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #6a328f;
+}
+
+li{
+	float: left;/*cambia el orden de las palabras, de izquierda a derecha*/
+	list-style: none;/*ocultar viñetas*/
+	padding: 10px;/*separacion entre letras*/
+	margin-top: 5px;/*separacion de margen superior*/
+}
+
+nav{
+	float: right;/*cambia el orden de las palabras, de izquierda a derechga*/
+	text-decoration: none;
+	margin-right: 150px;
+}
+
+li:hover a{
+	color: orange;/*al poner el cursor dentro de las letras tendran un color que las 
+					distingan*/
+}
+
+footer{
+	max-width: auto;
+	min-height: auto;
+	background-color: #FF5722;
+	margin: 0 auto;
+}
